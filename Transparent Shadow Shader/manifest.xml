@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest schema-ver="1">
+  <guid>Xyl.TransparentShadowShader</guid>
+  <name>Transparent Shadow Shader</name>
+  <version>0.1</version>
+  <author>Xyl</author>
+  <description>A shader that applies shadows to transparent objects.</description>
+  <MaterialEditor>
+    <Shader Name="Custom/TransparentShadow" AssetBundle="chara/xyl/transparent_shadow.unity3d" Asset="asset_TransparentShadow">
+      <Property Name="ShadowThreshold" Type="Float" Range="0,1" DefaultValue="0.5" />
+      <Property Name="ShadowColor" Type="Color" DefaultValue="0,0,0,0.3" />
+    </Shader>
+  </MaterialEditor>
+</manifest>
