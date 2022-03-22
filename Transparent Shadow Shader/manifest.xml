@@ -10,5 +10,22 @@
       <Property Name="ShadowThreshold" Type="Float" Range="0,1" DefaultValue="0.5" />
       <Property Name="ShadowColor" Type="Color" DefaultValue="0,0,0,0.3" />
     </Shader>
+    <Shader Name="Custom/Iridescent" AssetBundle="chara/xyl/transparent_shadow.unity3d" Asset="asset_Iridescent">
+      <Property Name="MainTex" Type="Texture" />
+      <Property Name="NormalMap" Type="Texture" />
+      <Property Name="HairGloss" Type="Texture" />
+      <Property Name="ColorMask" Type="Texture" />
+      <Property Name="DetailMask" Type="Texture" />
+      <Property Name="Color" Type="Color" />
+      <Property Name="Color2" Type="Color" />
+      <Property Name="Color3" Type="Color" />
+      <Property Name="ShadowColor" Type="Color" />
+      <Property Name="LineColor" Type="Color" />
+      <Property Name="ShadowThreshold" Type="Float" Range="0,1" DefaultValue="0.5" />
+      <Property Name="Iridescence" Type="Float" Range="0,1" DefaultValue="0.25" />
+      <Property Name="SpeclarHeight" Type="Float" Range="0,1" />
+      <Property Name="Cutoff" Type="Float" Range="0,1" />
+      <Property Name="ShadowLow" Type="Float" Range="-1,1" DefaultValue="0.3" />
+    </Shader>
   </MaterialEditor>
 </manifest>

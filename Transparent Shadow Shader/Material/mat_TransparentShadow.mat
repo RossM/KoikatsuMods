@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: mat_Wireframe
+  m_Name: mat_TransparentShadow
   m_Shader: {fileID: 4800000, guid: db5dfac69f6830e4f9115a05b34eaf74, type: 3}
   m_ShaderKeywords: _ALPHA_A_ON _ALPHA_B_ON _LINETEXON_ON
   m_LightmapFlags: 4

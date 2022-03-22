@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33241510181356140}
   - component: {fileID: 23480743780558372}
   m_Layer: 0
-  m_Name: asset_TransparentShadow
+  m_Name: asset_Iridescent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -54,7 +54,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 6aaa322247692544ea08096f6f0352a3, type: 2}
+  - {fileID: 2100000, guid: 23c35f60ef673294098707e35748ad1d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
