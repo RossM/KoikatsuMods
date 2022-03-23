@@ -21,11 +21,9 @@
       <Property Name="Color3" Type="Color" />
       <Property Name="ShadowColor" Type="Color" />
       <Property Name="LineColor" Type="Color" />
-      <Property Name="ShadowThreshold" Type="Float" Range="0,1" DefaultValue="0.5" />
       <Property Name="Iridescence" Type="Float" Range="0,1" DefaultValue="0.25" />
       <Property Name="SpeclarHeight" Type="Float" Range="0,1" />
       <Property Name="Cutoff" Type="Float" Range="0,1" />
-      <Property Name="ShadowLow" Type="Float" Range="-1,1" DefaultValue="0.3" />
     </Shader>
   </MaterialEditor>
 </manifest>
