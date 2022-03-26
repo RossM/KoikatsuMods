@@ -23,7 +23,6 @@
       <Property Name="ShadowColor" Type="Color" />
       <Property Name="LineColor" Type="Color" />
       <Property Name="IridescenceAlpha" Type="Float" Range="0,1" DefaultValue="0.25" />
-      <Property Name="IridescenceScale" Type="Float" Range="-1,1" DefaultValue="0.25" />
       <Property Name="SpeclarHeight" Type="Float" Range="0,1" />
       <Property Name="Cutoff" Type="Float" Range="0,1" />
       <Property Name="LineWidthS" Type="Float" Range="0,1" />
