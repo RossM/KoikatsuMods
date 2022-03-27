@@ -29,8 +29,8 @@
       <Property Name="IridescencePower" Type="Float" Range="0,1" />
       <Property Name="rimpower" Type="Float" Range="0,1" />
       <Property Name="rimV" Type="Float" Range="0,1" />
-      <Property Name="rimX" Type="Float" Range="-10,10" />
-      <Property Name="rimY" Type="Float" Range="-10,10" />
+      <Property Name="shadowV" Type="Float" Range="0,2" />
+      <Property Name="ShadowExtend" Type="Float" Range="0,1" />
       <Property Name="rimColor" Type="Color" />
     </Shader>
   </MaterialEditor>
