@@ -16,17 +16,17 @@
       <Property Name="HairGloss" Type="Texture" />
       <Property Name="ColorMask" Type="Texture" />
       <Property Name="DetailMask" Type="Texture" />
-      <Property Name="IridescenceTex" Type="Texture" />
+      <Property Name="IridescenceTex" Type="Texture" DefaultValueAssetBundle="chara/xyl/transparent_shadow.unity3d" DefaultValue="rainbow" />
       <Property Name="Color" Type="Color" />
       <Property Name="Color2" Type="Color" />
       <Property Name="Color3" Type="Color" />
       <Property Name="ShadowColor" Type="Color" />
       <Property Name="LineColor" Type="Color" />
-      <Property Name="IridescenceAlpha" Type="Float" Range="0,1" DefaultValue="0" />
+      <Property Name="IridescenceAlpha" Type="Float" Range="0,1" />
       <Property Name="SpeclarHeight" Type="Float" Range="0,1" />
       <Property Name="Cutoff" Type="Float" Range="0,1" />
       <Property Name="LineWidthS" Type="Float" Range="0,1" />
-      <Property Name="IridescencePower" Type="Float" Range="0,10" DefaultValue="0" />
+      <Property Name="IridescencePower" Type="Float" Range="0,1" />
       <Property Name="rimpower" Type="Float" Range="0,1" />
       <Property Name="rimV" Type="Float" Range="0,1" />
       <Property Name="rimX" Type="Float" Range="-10,10" />
