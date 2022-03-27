@@ -30,6 +30,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _IridescenceTex:
+        m_Texture: {fileID: 2800000, guid: e2125582235a4034aa79ad7aa8b195c4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -41,6 +45,9 @@ Material:
     m_Floats:
     - _Cutoff: 0.5
     - _Iridescence: 0.25
+    - _IridescenceAlpha: 0.4
+    - _IridescencePower: 0
+    - _LineWidthS: 1
     - _SpeclarHeight: 0.95
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
