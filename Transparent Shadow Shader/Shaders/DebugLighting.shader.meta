@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-guid: 3e2c413cd62f9bf458aceb5a8025f999
-timeCreated: 1648432438
+guid: f94ebc8523755ee4c9baa82e9bf85b3c
+timeCreated: 1648433648
 licenseType: Free
-NativeFormatImporter:
-  mainObjectFileID: -1
+ShaderImporter:
+  defaultTextures: []
   userData: 
   assetBundleName: chara/xyl/transparent_shadow.unity3d
   assetBundleVariant: 

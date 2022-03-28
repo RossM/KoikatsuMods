@@ -32,6 +32,13 @@
       <Property Name="shadowV" Type="Float" Range="0,2" />
       <Property Name="ShadowExtend" Type="Float" Range="0,1" />
       <Property Name="rimColor" Type="Color" />
+      <Property Name="rimX" Type="Float" Range="0,1" />
+    </Shader>
+    <Shader Name="Debug/DetailMask" AssetBundle="chara/xyl/transparent_shadow.unity3d" Asset="asset_DebugDetailMask">
+      <Property Name="DetailMask" Type="Texture" />
+    </Shader>
+    <Shader Name="Debug/Lighting" AssetBundle="chara/xyl/transparent_shadow.unity3d" Asset="asset_DebugLighting">
+      <Property Name="NormalMap" Type="Texture" />
     </Shader>
   </MaterialEditor>
 </manifest>
