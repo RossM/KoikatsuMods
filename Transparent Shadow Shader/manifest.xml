@@ -38,8 +38,20 @@
       <Property Name="rimColor" Type="Color" />
       <Property Name="rimX" Type="Float" Range="0,1" />
     </Shader>
-    <Shader Name="Debug/DetailMask" AssetBundle="chara/xyl/transparent_shadow.unity3d" Asset="asset_DebugDetailMask">
+    <Shader Name="Debug/Textures" AssetBundle="chara/xyl/transparent_shadow.unity3d" Asset="asset_DebugTextures">
+      <Property Name="MainTex" Type="Texture" />
       <Property Name="DetailMask" Type="Texture" />
+      <Property Name="ColorMask" Type="Texture" />
+      <Property Name="NormalMap" Type="Texture" />
+      <Property Name="Matcap" Type="Texture" />
+      <Property Name="LineMask" Type="Texture" />
+      <Property Name="AlphaMask" Type="Texture" />
+      <Property Name="UseNormalMap" Type="Float" Range="0,1" />
+      <Property Name="UseDetailMask" Type="Float" Range="0,1" />
+      <Property Name="UseColorMask" Type="Float" Range="0,1" />
+      <Property Name="UseMatcap" Type="Float" Range="0,1" />
+      <Property Name="UseLineMask" Type="Float" Range="0,1" />
+      <Property Name="UseAlphaMask" Type="Float" Range="0,1" />
     </Shader>
     <Shader Name="Debug/Lighting" AssetBundle="chara/xyl/transparent_shadow.unity3d" Asset="asset_DebugLighting">
       <Property Name="NormalMap" Type="Texture" />

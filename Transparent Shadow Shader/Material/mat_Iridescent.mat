@@ -55,12 +55,12 @@ Material:
     - _Iridescence: 0.25
     - _IridescenceAlpha: 0.4
     - _IridescencePower: 0
-    - _IridescenceV: 0
+    - _IridescenceV: 0.3
     - _LineWidthS: 1
     - _ShadowExtend: 0
     - _SpeclarHeight: 0.95
-    - _rimV: 0
-    - _rimpower: 0
+    - _rimV: 0.3
+    - _rimpower: 0.5
     - _shadowV: 2
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
