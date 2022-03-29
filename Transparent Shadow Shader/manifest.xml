@@ -50,8 +50,10 @@
       <Property Name="UseDetailMask" Type="Float" Range="0,1" />
       <Property Name="UseColorMask" Type="Float" Range="0,1" />
       <Property Name="UseMatcap" Type="Float" Range="0,1" />
+      <Property Name="UseMatcapUV" Type="Float" Range="0,1" />
       <Property Name="UseLineMask" Type="Float" Range="0,1" />
       <Property Name="UseAlphaMask" Type="Float" Range="0,1" />
+      <Property Name="MatcapMode" Type="Float" Range="0,1" />
     </Shader>
     <Shader Name="Debug/Lighting" AssetBundle="chara/xyl/transparent_shadow.unity3d" Asset="asset_DebugLighting">
       <Property Name="NormalMap" Type="Texture" />
