@@ -1,9 +1,11 @@
 fileFormatVersion: 2
 guid: 6fcf07499eb69c347b19b671072d835b
-timeCreated: 1648546736
+timeCreated: 1648558672
 licenseType: Free
 ShaderImporter:
-  defaultTextures: []
+  defaultTextures:
+  - _IridescenceTex: {fileID: 2800000, guid: e2125582235a4034aa79ad7aa8b195c4, type: 3}
+  - _IridescenceRot: {fileID: 2800000, guid: f91397b4aaa81c14fbfcbac9bfea6bd4, type: 3}
   userData: 
   assetBundleName: chara/xyl/transparent_shadow.unity3d
   assetBundleVariant: 
