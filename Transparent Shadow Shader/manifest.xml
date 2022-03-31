@@ -11,6 +11,12 @@
       <Property Name="ShadowColor" Type="Color" DefaultValue="0.8,0.8,0.8,1" />
       <Property Name="FakeRefraction" Type="Float" Range="-1,1" />
     </Shader>
+    <Shader Name="Custom/SimpleMatcap" AssetBundle="chara/xyl/transparent_shadow.unity3d" Asset="asset_SimpleMatcap">
+      <Property Name="Matcap" Type="Texture" DefaultValueAssetBundle="chara/xyl/transparent_shadow.unity3d" DefaultValue="matcap_cartoon" />
+      <Property Name="NormalMap" Type="Texture" />
+      <Property Name="Color" Type="Color" />
+      <Property Name="AlphaCutoff" Type="Float" Range="0,1" />
+    </Shader>
     <Shader Name="Custom/Iridescent" AssetBundle="chara/xyl/transparent_shadow.unity3d" Asset="asset_Iridescent">
       <Property Name="MainTex" Type="Texture" />
       <Property Name="NormalMap" Type="Texture" />
