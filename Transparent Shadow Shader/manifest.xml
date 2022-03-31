@@ -17,6 +17,12 @@
       <Property Name="Color" Type="Color" />
       <Property Name="AlphaCutoff" Type="Float" Range="0,1" />
     </Shader>
+    <Shader Name="Custom/GlowCensor" AssetBundle="chara/xyl/transparent_shadow.unity3d" Asset="asset_GlowCensor">
+      <Property Name="Matcap" Type="Texture" DefaultValueAssetBundle="chara/xyl/transparent_shadow.unity3d" DefaultValue="matcap_censor" />
+      <Property Name="NormalMap" Type="Texture" />
+      <Property Name="Color" Type="Color" />
+      <Property Name="AlphaCutoff" Type="Float" Range="0,1" />
+    </Shader>
     <Shader Name="Custom/Iridescent" AssetBundle="chara/xyl/transparent_shadow.unity3d" Asset="asset_Iridescent">
       <Property Name="MainTex" Type="Texture" />
       <Property Name="NormalMap" Type="Texture" />
