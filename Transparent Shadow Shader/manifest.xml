@@ -17,11 +17,17 @@
       <Property Name="Color" Type="Color" />
       <Property Name="AlphaCutoff" Type="Float" Range="0,1" />
     </Shader>
-    <Shader Name="Custom/GlowCensor" AssetBundle="chara/xyl/transparent_shadow.unity3d" Asset="asset_GlowCensor">
-      <Property Name="Matcap" Type="Texture" DefaultValueAssetBundle="chara/xyl/transparent_shadow.unity3d" DefaultValue="matcap_censor" />
+    <Shader Name="Custom/StickerCensor" AssetBundle="chara/xyl/transparent_shadow.unity3d" Asset="asset_StickerCensor">
+      <Property Name="StickerTex" Type="Texture" DefaultValueAssetBundle="chara/xyl/transparent_shadow.unity3d" DefaultValue="sticker" />
       <Property Name="NormalMap" Type="Texture" />
       <Property Name="Color" Type="Color" />
       <Property Name="AlphaCutoff" Type="Float" Range="0,1" />
+      <Property Name="DebugMode" Type="Float" Range="0,1" />
+      <Property Name="FadeInterval" Type="Float" Range="0,1" />
+      <Property Name="HideDepth" Type="Float" Range="0,10" />
+      <Property Name="AllowPartialHiding" Type="Float" Range="0,1" />
+      <Property Name="Radius" Type="Float" Range="0,10" />
+      <Property Name="ScaleMode" Type="Float" Range="0,1" />
     </Shader>
     <Shader Name="Custom/Iridescent" AssetBundle="chara/xyl/transparent_shadow.unity3d" Asset="asset_Iridescent">
       <Property Name="MainTex" Type="Texture" />

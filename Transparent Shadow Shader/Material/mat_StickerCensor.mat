@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: mat_GlowCensor
+  m_Name: mat_StickerCensor
   m_Shader: {fileID: 4800000, guid: e21bb0841d5071446a82ae41c6144ad1, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -68,13 +68,18 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+    - _Fade: 0.2
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
+    - _HideDepth: 1
+    - _IsUniform: 1
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _Radius: 1
+    - _ScaleMode: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1

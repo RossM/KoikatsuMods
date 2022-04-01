@@ -1,10 +1,10 @@
 fileFormatVersion: 2
 guid: e21bb0841d5071446a82ae41c6144ad1
-timeCreated: 1648737461
+timeCreated: 1648791265
 licenseType: Free
 ShaderImporter:
   defaultTextures:
-  - _Matcap: {fileID: 2800000, guid: 0b724cfa04616f0498fd26177799a9b2, type: 3}
+  - _StickerTex: {fileID: 2800000, guid: 0b724cfa04616f0498fd26177799a9b2, type: 3}
   userData: 
   assetBundleName: chara/xyl/transparent_shadow.unity3d
   assetBundleVariant: 
