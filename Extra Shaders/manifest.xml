@@ -12,10 +12,14 @@
       <Property Name="NormalMap" Type="Texture" />
       <Property Name="ShadowColor" Type="Color" />
       <Property Name="Color" Type="Color" />
+      <Property Name="rimColor" Type="Color" />
       <Property Name="Translucency" Type="Float" Range="0,1" />
       <Property Name="Transparency" Type="Float" Range="0,1" />
       <Property Name="MatcapAlpha" Type="Float" Range="0,1" />
       <Property Name="FakeRefraction" Type="Float" Range="-1,1" />
+      <Property Name="ShadowsOnBackground" Type="Float" Range="0,1" />
+      <Property Name="rimpower" Type="Float" Range="0,1" />
+      <Property Name="rimV" Type="Float" Range="0,1" />
     </Shader>
     <Shader Name="Custom/SimpleMatcap" AssetBundle="chara/xyl/extra_shaders.unity3d" Asset="asset_SimpleMatcap">
       <Property Name="Matcap" Type="Texture" DefaultValueAssetBundle="chara/xyl/extra_shaders.unity3d" DefaultValue="matcap_cartoon" />
