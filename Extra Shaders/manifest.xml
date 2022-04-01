@@ -6,7 +6,7 @@
   <author>Xyl</author>
   <description>A collection of shaders.</description>
   <MaterialEditor>
-    <Shader Name="Custom/TransparentShadow" AssetBundle="chara/xyl/extra_shaders.unity3d" Asset="asset_TransparentShadow">
+    <Shader Name="Custom/Translucent" AssetBundle="chara/xyl/extra_shaders.unity3d" Asset="asset_Translucent">
       <Property Name="Matcap" Type="Texture" DefaultValueAssetBundle="chara/xyl/extra_shaders.unity3d" DefaultValue="matcap_cartoon" />
       <Property Name="MainTex" Type="Texture" />
       <Property Name="NormalMap" Type="Texture" />
