@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: f91397b4aaa81c14fbfcbac9bfea6bd4
-timeCreated: 1648525704
+guid: 0b724cfa04616f0498fd26177799a9b2
+timeCreated: 1648736185
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
@@ -8,7 +8,7 @@ TextureImporter:
   mipmaps:
     mipMapMode: 0
     enableMipMap: 1
-    sRGBTexture: 0
+    sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
@@ -42,7 +42,7 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 0
   textureShape: 1
@@ -72,5 +72,5 @@ TextureImporter:
     outline: []
   spritePackingTag: 
   userData: 
-  assetBundleName: chara/xyl/transparent_shadow.unity3d
+  assetBundleName: chara/xyl/extra_shaders.unity3d
   assetBundleVariant: 

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: e2125582235a4034aa79ad7aa8b195c4
-timeCreated: 1648267786
+guid: 4e7f9841adbcd3c4db9e17dee6a1f471
+timeCreated: 1648727040
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
@@ -64,5 +64,5 @@ TextureImporter:
     outline: []
   spritePackingTag: 
   userData: 
-  assetBundleName: chara/xyl/transparent_shadow.unity3d
+  assetBundleName: chara/xyl/extra_shaders.unity3d
   assetBundleVariant: 

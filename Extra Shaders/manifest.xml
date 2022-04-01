@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <manifest schema-ver="1">
-  <guid>Xyl.TransparentShadowShader</guid>
-  <name>Transparent Shadow Shader</name>
+  <guid>Xyl.ExtraShaders</guid>
+  <name>Extra Shaders</name>
   <version>0.1</version>
   <author>Xyl</author>
-  <description>A shader that applies shadows to transparent objects.</description>
+  <description>A collection of shaders.</description>
   <MaterialEditor>
-    <Shader Name="Custom/TransparentShadow" AssetBundle="chara/xyl/transparent_shadow.unity3d" Asset="asset_TransparentShadow">
-      <Property Name="Matcap" Type="Texture" DefaultValueAssetBundle="chara/xyl/transparent_shadow.unity3d" DefaultValue="matcap_cartoon" />
+    <Shader Name="Custom/TransparentShadow" AssetBundle="chara/xyl/extra_shaders.unity3d" Asset="asset_TransparentShadow">
+      <Property Name="Matcap" Type="Texture" DefaultValueAssetBundle="chara/xyl/extra_shaders.unity3d" DefaultValue="matcap_cartoon" />
       <Property Name="MainTex" Type="Texture" />
       <Property Name="NormalMap" Type="Texture" />
       <Property Name="ShadowColor" Type="Color" />
@@ -17,14 +17,14 @@
       <Property Name="MatcapAlpha" Type="Float" Range="0,1" />
       <Property Name="FakeRefraction" Type="Float" Range="-1,1" />
     </Shader>
-    <Shader Name="Custom/SimpleMatcap" AssetBundle="chara/xyl/transparent_shadow.unity3d" Asset="asset_SimpleMatcap">
-      <Property Name="Matcap" Type="Texture" DefaultValueAssetBundle="chara/xyl/transparent_shadow.unity3d" DefaultValue="matcap_cartoon" />
+    <Shader Name="Custom/SimpleMatcap" AssetBundle="chara/xyl/extra_shaders.unity3d" Asset="asset_SimpleMatcap">
+      <Property Name="Matcap" Type="Texture" DefaultValueAssetBundle="chara/xyl/extra_shaders.unity3d" DefaultValue="matcap_cartoon" />
       <Property Name="NormalMap" Type="Texture" />
       <Property Name="Color" Type="Color" />
       <Property Name="AlphaCutoff" Type="Float" Range="0,1" />
     </Shader>
-    <Shader Name="Custom/StickerCensor" AssetBundle="chara/xyl/transparent_shadow.unity3d" Asset="asset_StickerCensor">
-      <Property Name="StickerTex" Type="Texture" DefaultValueAssetBundle="chara/xyl/transparent_shadow.unity3d" DefaultValue="sticker" />
+    <Shader Name="Custom/StickerCensor" AssetBundle="chara/xyl/extra_shaders.unity3d" Asset="asset_StickerCensor">
+      <Property Name="StickerTex" Type="Texture" DefaultValueAssetBundle="chara/xyl/extra_shaders.unity3d" DefaultValue="sticker" />
       <Property Name="NormalMap" Type="Texture" />
       <Property Name="Color" Type="Color" />
       <Property Name="AlphaCutoff" Type="Float" Range="0,1" />
@@ -35,15 +35,15 @@
       <Property Name="Radius" Type="Float" Range="0,10" />
       <Property Name="ScaleMode" Type="Float" Range="0,1" />
     </Shader>
-    <Shader Name="Custom/Iridescent" AssetBundle="chara/xyl/transparent_shadow.unity3d" Asset="asset_Iridescent">
+    <Shader Name="Custom/Iridescent" AssetBundle="chara/xyl/extra_shaders.unity3d" Asset="asset_Iridescent">
       <Property Name="MainTex" Type="Texture" />
       <Property Name="NormalMap" Type="Texture" />
       <Property Name="HairGloss" Type="Texture" />
       <Property Name="ColorMask" Type="Texture" />
       <Property Name="DetailMask" Type="Texture" />
-      <Property Name="IridescenceRot" Type="Texture" DefaultValueAssetBundle="chara/xyl/transparent_shadow.unity3d" DefaultValue="gray50" />
+      <Property Name="IridescenceRot" Type="Texture" DefaultValueAssetBundle="chara/xyl/extra_shaders.unity3d" DefaultValue="gray50" />
       <Property Name="IridescenceMask" Type="Texture" />
-      <Property Name="IridescenceTex" Type="Texture" DefaultValueAssetBundle="chara/xyl/transparent_shadow.unity3d" DefaultValue="irid_rainbow" />
+      <Property Name="IridescenceTex" Type="Texture" DefaultValueAssetBundle="chara/xyl/extra_shaders.unity3d" DefaultValue="irid_rainbow" />
       <Property Name="Color" Type="Color" />
       <Property Name="Color2" Type="Color" />
       <Property Name="Color3" Type="Color" />
@@ -63,7 +63,7 @@
       <Property Name="rimX" Type="Float" Range="0,1" />
       <Property Name="ViewSpaceIridescence" Type="Float" Range="0,1" />
     </Shader>
-    <Shader Name="Debug/Textures" AssetBundle="chara/xyl/transparent_shadow.unity3d" Asset="asset_DebugTextures">
+    <Shader Name="Debug/Textures" AssetBundle="chara/xyl/extra_shaders.unity3d" Asset="asset_DebugTextures">
       <Property Name="MainTex" Type="Texture" />
       <Property Name="DetailMask" Type="Texture" />
       <Property Name="ColorMask" Type="Texture" />
@@ -80,7 +80,7 @@
       <Property Name="UseAlphaMask" Type="Float" Range="0,1" />
       <Property Name="MatcapMode" Type="Float" Range="0,1" />
     </Shader>
-    <Shader Name="Debug/Lighting" AssetBundle="chara/xyl/transparent_shadow.unity3d" Asset="asset_DebugLighting">
+    <Shader Name="Debug/Lighting" AssetBundle="chara/xyl/extra_shaders.unity3d" Asset="asset_DebugLighting">
       <Property Name="NormalMap" Type="Texture" />
     </Shader>
   </MaterialEditor>
