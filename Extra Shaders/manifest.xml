@@ -82,6 +82,7 @@
       <Property Name="UseMatcapUV" Type="Float" Range="0,1" />
       <Property Name="UseLineMask" Type="Float" Range="0,1" />
       <Property Name="UseAlphaMask" Type="Float" Range="0,1" />
+      <Property Name="UseNormals" Type="Float" Range="0,1" />
       <Property Name="MatcapMode" Type="Float" Range="0,1" />
     </Shader>
     <Shader Name="Debug/Lighting" AssetBundle="chara/xyl/extra_shaders.unity3d" Asset="asset_DebugLighting">
