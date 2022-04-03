@@ -34,7 +34,7 @@
       <Property Name="AlphaCutoff" Type="Float" Range="0,1" />
       <Property Name="DebugMode" Type="Float" Range="0,1" />
       <Property Name="FadeInterval" Type="Float" Range="0,1" />
-      <Property Name="HideDepth" Type="Float" Range="0,10" />
+      <Property Name="HideDepth" Type="Float" Range="-10,10" />
       <Property Name="AllowPartialHiding" Type="Float" Range="0,1" />
       <Property Name="Radius" Type="Float" Range="0,10" />
       <Property Name="ScaleMode" Type="Float" Range="0,1" />
