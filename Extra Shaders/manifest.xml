@@ -27,7 +27,7 @@
       <Property Name="Color" Type="Color" />
       <Property Name="AlphaCutoff" Type="Float" Range="0,1" />
     </Shader>
-    <Shader Name="Custom/StickerCensor" AssetBundle="chara/xyl/extra_shaders.unity3d" Asset="asset_StickerCensor">
+    <Shader Name="Custom/Sticker" AssetBundle="chara/xyl/extra_shaders.unity3d" Asset="asset_Sticker">
       <Property Name="StickerTex" Type="Texture" DefaultValueAssetBundle="chara/xyl/extra_shaders.unity3d" DefaultValue="sticker" />
       <Property Name="NormalMap" Type="Texture" />
       <Property Name="Color" Type="Color" />

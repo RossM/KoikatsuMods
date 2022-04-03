@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: mat_StickerCensor
-  m_Shader: {fileID: 4800000, guid: e21bb0841d5071446a82ae41c6144ad1, type: 3}
+  m_Name: mat_Sticker
+  m_Shader: {fileID: 4800000, guid: 2c555bbeb96e734428166e9514e6d52f, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
