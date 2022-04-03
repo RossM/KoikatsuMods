@@ -1,10 +1,9 @@
 fileFormatVersion: 2
-guid: db5dfac69f6830e4f9115a05b34eaf74
-timeCreated: 1648994107
+guid: 213b92ce24e96424db7d39876194ec57
+timeCreated: 1649017660
 licenseType: Free
 ShaderImporter:
-  defaultTextures:
-  - _Matcap: {fileID: 2800000, guid: 4e7f9841adbcd3c4db9e17dee6a1f471, type: 3}
+  defaultTextures: []
   userData: 
   assetBundleName: chara/xyl/extra_shaders.unity3d
   assetBundleVariant: 
