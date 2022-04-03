@@ -38,6 +38,12 @@
       <Property Name="AllowPartialHiding" Type="Float" Range="0,1" />
       <Property Name="Radius" Type="Float" Range="0,10" />
       <Property Name="ScaleMode" Type="Float" Range="0,1" />
+      <Property Name="AnimationSpeed" Type="Float" Range="0,1" />
+      <Property Name="AnimationPhase" Type="Float" Range="0,1" />
+      <Property Name="AnimationScaleU" Type="Float" Range="0,2" />
+      <Property Name="AnimationScaleV" Type="Float" Range="0,2" />
+      <Property Name="AnimationOffsetU" Type="Float" Range="-1,1" />
+      <Property Name="AnimationOffsetV" Type="Float" Range="-1,1" />
     </Shader>
     <Shader Name="Custom/Iridescent" AssetBundle="chara/xyl/extra_shaders.unity3d" Asset="asset_Iridescent">
       <Property Name="MainTex" Type="Texture" />
