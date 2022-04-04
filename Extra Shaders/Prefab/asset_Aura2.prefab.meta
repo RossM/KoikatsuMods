@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-guid: 5b5bcfbd7ca01d848b7d8a619ee40570
-timeCreated: 1649081490
+guid: 4f7c4417f5f54f545bb6e8a01523c7c5
+timeCreated: 1649081668
 licenseType: Free
-ShaderImporter:
-  defaultTextures: []
+NativeFormatImporter:
+  mainObjectFileID: -1
   userData: 
   assetBundleName: chara/xyl/extra_shaders.unity3d
   assetBundleVariant: 
