@@ -1,28 +1,38 @@
-﻿// float sceneZ = max(0,LinearEyeDepth (UNITY_SAMPLE_DEPTH(tex2Dproj(DepthTexture, UNITY_PROJ_COORD(float4(uv, 0, 1))))) - _ProjectionParams.g);
-// Upgrade NOTE: excluded shader from DX11 because it uses wrong array syntax (type[size] name)
-#pragma exclude_renderers d3d11
-const int dirSteps = 24;
-const int distSteps = 10;
-float2 dir[dirSteps];
+﻿#ifdef UNITY_API_D3D11
+const int maxRadius = 10;
+#else
+const int maxRadius = 10;
+#endif
 
-radius *= length(_ScreenParams.xy) / centerZ;
-
-for (int i = 0; i < dirSteps; i++)
+const int dSize = 2 * maxRadius + 1;
+int d[dSize];
+d[0] = 0;
+for (int n = 1; n <= maxRadius; n++)
 {
-	float r = 6.2831853 * i / dirSteps;
-	dir[i] = (radius / distSteps) * float2(sin(r), cos(r)) / _ScreenParams.xy;
+	d[2 * n - 1] = n;
+	d[2 * n] = -n;
 }
 
-float result = 1;
-[unroll] for (int j = distSteps; j > 0; j--)
+radius *= length(_ScreenParams.xy);
+
+float step = max(radius / (maxRadius + 1), 1);
+
+float result = radius;
+[loop] for (int j = 0; j < dSize; j++)
 {
-	int step = (uint)distSteps / (uint)j;
-	[unroll] for (int i = 0; i < dirSteps; i += step)
+	int y = d[j];
+	[unroll] for (int i = 0; i < dSize; i++)
 	{
-		float sceneZ = max(0, LinearEyeDepth(UNITY_SAMPLE_DEPTH(tex2D(DepthTexture, uv + dir[i] * j))) - _ProjectionParams.g);
-		if (sceneZ <= depth && tex2D(GrabTexture, uv + dir[i] * j).a == 0)
-			result = (float)(j - 1) / distSteps;
+		int x = d[i];
+		float r = sqrt(x * x + y * y) * step;
+		float2 uv2 = uv + float2(x, y) * step / _ScreenParams.xy;
+		if (result > r)
+		{
+			float sceneZ = max(0, LinearEyeDepth(UNITY_SAMPLE_DEPTH(tex2D(DepthTexture, uv2))) - _ProjectionParams.g);
+			if (sceneZ <= depth && tex2D(GrabTexture, uv2).a == 0)
+				result = r;
+		}
 	}
 }
 
-return result;
+return result / radius;

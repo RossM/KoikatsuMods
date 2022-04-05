@@ -7,6 +7,8 @@ Shader "Custom/Aura" {
         _AnimationU ("AnimationU", Float ) = 0
         _AnimationV ("AnimationV", Float ) = -0.06
         _NoiseAmount ("NoiseAmount", Float ) = 0.5
+        _DetailMask ("DetailMask", 2D) = "white" {}
+        _LineWidthS ("LineWidthS", Float ) = 1
     }
     SubShader {
         Tags {
