@@ -80,10 +80,12 @@
       <Property Name="Power" Type="Float" Range="0,1" />
     </Shader>
     <Shader Name="Custom/Aura2" AssetBundle="chara/xyl/extra_shaders.unity3d" Asset="asset_Aura2">
+      <Property Name="NoiseTex" Type="Texture" DefaultValueAssetBundle="chara/xyl/extra_shaders.unity3d" DefaultValue="blobby" />
       <Property Name="Color" Type="Color" />
-      <Property Name="Size1" Type="Float" Range="0,1" />
-      <Property Name="Size2" Type="Float" Range="0,1" />
       <Property Name="Radius" Type="Float" Range="0,1" />
+      <Property Name="AnimationU" Type="Float" Range="-1,1" />
+      <Property Name="AnimationV" Type="Float" Range="-1,1" />
+      <Property Name="NoiseAmount" Type="Float" Range="0,1" />
     </Shader>
     <Shader Name="Debug/Textures" AssetBundle="chara/xyl/extra_shaders.unity3d" Asset="asset_DebugTextures">
       <Property Name="MainTex" Type="Texture" />
