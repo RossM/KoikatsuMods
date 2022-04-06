@@ -9,6 +9,7 @@ Shader "Custom/Aura" {
         _NoiseAmount ("NoiseAmount", Float ) = 0.5
         _DetailMask ("DetailMask", 2D) = "white" {}
         _LineWidthS ("LineWidthS", Float ) = 1
+        _Gradient ("Gradient", 2D) = "white" {}
     }
     SubShader {
         Tags {

@@ -77,6 +77,7 @@
       <Property Name="MainTex" Type="Texture" />
       <Property Name="DetailMask" Type="Texture" />
       <Property Name="NoiseTex" Type="Texture" DefaultValueAssetBundle="chara/xyl/extra_shaders.unity3d" DefaultValue="blobby" />
+      <Property Name="Gradient" Type="Texture" DefaultValueAssetBundle="chara/xyl/extra_shaders.unity3d" DefaultValue="aura_gradient" />
       <Property Name="Color" Type="Color" />
       <Property Name="Radius" Type="Float" Range="0,1" />
       <Property Name="AnimationU" Type="Float" Range="-1,1" />
