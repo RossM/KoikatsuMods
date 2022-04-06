@@ -78,7 +78,7 @@ Material:
     - _NoiseAmount: 0.5
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _Radius: 0.5
+    - _Radius: 0.1
     - _Size1: 0.1
     - _Size2: 0.1
     - _SmoothnessTextureChannel: 0
