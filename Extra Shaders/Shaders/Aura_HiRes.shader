@@ -16,12 +16,12 @@ Shader "Custom/Aura_HiRes" {
             "IgnoreProjector"="True"
             "Queue"="Transparent"
             "RenderType"="Transparent"
+            "ForceNoShadowCasting" = "True"
         }
         LOD 600
         UsePass "Custom/AuraStencil/STENCIL"
         GrabPass { }
         UsePass "Custom/AuraBase_HiRes/FORWARD"
-        UsePass "Custom/AuraBase_HiRes/SHADOWCASTER"
     }
     FallBack "Custom/Aura"
 }   
