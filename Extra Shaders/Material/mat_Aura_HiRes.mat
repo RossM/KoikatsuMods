@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: mat_Aura
-  m_Shader: {fileID: 4800000, guid: c8cc15239c4aa1441ada378d272c0611, type: 3}
+  m_Name: mat_Aura_HiRes
+  m_Shader: {fileID: 4800000, guid: ef877fcaac1dc5f479a90f74e5fadb1e, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0

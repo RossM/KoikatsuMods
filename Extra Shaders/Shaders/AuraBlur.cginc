@@ -1,5 +1,5 @@
-﻿#ifdef UNITY_API_D3D11
-const int maxRadius = 10;
+﻿#ifdef AURA_HIRES
+const int maxRadius = 31;
 #else
 const int maxRadius = 10;
 #endif

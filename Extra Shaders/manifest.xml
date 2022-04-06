@@ -85,6 +85,18 @@
       <Property Name="NoiseAmount" Type="Float" Range="0,1" />
       <Property Name="LineWidthS" Type="Float" Range="0,1" />
     </Shader>
+    <Shader Name="Custom/Aura_HiRes" AssetBundle="chara/xyl/extra_shaders.unity3d" Asset="asset_Aura_HiRes">
+      <Property Name="MainTex" Type="Texture" />
+      <Property Name="DetailMask" Type="Texture" />
+      <Property Name="NoiseTex" Type="Texture" DefaultValueAssetBundle="chara/xyl/extra_shaders.unity3d" DefaultValue="blobby" />
+      <Property Name="Gradient" Type="Texture" DefaultValueAssetBundle="chara/xyl/extra_shaders.unity3d" DefaultValue="aura_gradient" />
+      <Property Name="Color" Type="Color" />
+      <Property Name="Radius" Type="Float" Range="0,1" />
+      <Property Name="AnimationU" Type="Float" Range="-1,1" />
+      <Property Name="AnimationV" Type="Float" Range="-1,1" />
+      <Property Name="NoiseAmount" Type="Float" Range="0,1" />
+      <Property Name="LineWidthS" Type="Float" Range="0,1" />
+    </Shader>
     <Shader Name="Debug/Textures" AssetBundle="chara/xyl/extra_shaders.unity3d" Asset="asset_DebugTextures">
       <Property Name="MainTex" Type="Texture" />
       <Property Name="DetailMask" Type="Texture" />
