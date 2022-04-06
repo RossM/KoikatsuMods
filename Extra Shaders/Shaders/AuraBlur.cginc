@@ -14,6 +14,7 @@ for (int n = 1; n <= maxRadius; n++)
 }
 
 radius *= length(_ScreenParams.xy);
+float testZ = (1.0 / (depth + _ProjectionParams.g) - _ZBufferParams.w) / _ZBufferParams.z;
 
 float step = max(radius / (maxRadius + 1), 1);
 
@@ -22,18 +23,26 @@ float result = radius;
 // texture accesses.
 [loop] for (int j = 0; j < dSize; j++)
 {
-	int y = d[j];
+	float y = d[j];
+	if (abs(y) >= result)
+		break;
+	float2 uv2 = uv + float2(-maxRadius, y) * step / _ScreenParams.xy;
 	// Iterate over columns in order to be easy to parallelize.
-	[unroll] for (int x = -maxRadius; x <= maxRadius; x++)
+	[unroll] for (float x = -maxRadius; x <= maxRadius; x++)
 	{
 		float r = sqrt(x * x + y * y) * step;
-		float2 uv2 = uv + float2(x, y) * step / _ScreenParams.xy;
 		if (result > r)
 		{
-			float sceneZ = max(0, LinearEyeDepth(UNITY_SAMPLE_DEPTH(tex2D(DepthTexture, uv2))) - _ProjectionParams.g);
-			if (sceneZ <= depth && tex2D(GrabTexture, uv2).a == 0)
+			float sceneZ = UNITY_SAMPLE_DEPTH(tex2D(DepthTexture, uv2));
+#ifdef UNITY_REVERSED_Z 
+			if (sceneZ >= testZ && tex2D(GrabTexture, uv2).a == 0)
 				result = r;
+#else
+			if (sceneZ <= testZ && tex2D(GrabTexture, uv2).a == 0)
+				result = r;
+#endif
 		}
+		uv2.x += step / _ScreenParams.x;
 	}
 }
 
