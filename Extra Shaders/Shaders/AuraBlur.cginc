@@ -18,12 +18,14 @@ radius *= length(_ScreenParams.xy);
 float step = max(radius / (maxRadius + 1), 1);
 
 float result = radius;
+// Iterate over rows in an order intended to maximize the chance that we find a nearby pixel early and can skip
+// texture accesses.
 [loop] for (int j = 0; j < dSize; j++)
 {
 	int y = d[j];
-	[unroll] for (int i = 0; i < dSize; i++)
+	// Iterate over columns in order to be easy to parallelize.
+	[unroll] for (int x = -maxRadius; x <= maxRadius; x++)
 	{
-		int x = d[i];
 		float r = sqrt(x * x + y * y) * step;
 		float2 uv2 = uv + float2(x, y) * step / _ScreenParams.xy;
 		if (result > r)
