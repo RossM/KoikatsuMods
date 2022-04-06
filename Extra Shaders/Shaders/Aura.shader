@@ -1,6 +1,6 @@
 Shader "Custom/Aura" {
     Properties {
-        _Color ("Color", Color) = (0.8897059,0.150465,0.2881167,0.45)
+        _Color ("Color", Color) = (0.9411765,0.05536332,0.3669252,1)
         _Radius ("Radius", Float ) = 0.2
         _NoiseTex ("NoiseTex", 2D) = "gray" {}
         _MainTex ("MainTex", 2D) = "white" {}
