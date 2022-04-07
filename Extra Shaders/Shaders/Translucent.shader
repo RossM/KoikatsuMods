@@ -1,6 +1,6 @@
 ﻿Shader "Custom/Translucent" {
     Properties {
-        _ShadowColor ("ShadowColor", Color) = (0.8,0.8,0.8,0.2)
+        _ShadowColor("ShadowColor", Color) = (0.8,0.8,0.8,1)
         _NormalMap ("NormalMap", 2D) = "bump" {}
         _FakeRefraction ("FakeRefraction", Float ) = 0.1
         _Matcap ("Matcap", 2D) = "white" {}
@@ -15,6 +15,8 @@
         _rimpower ("rimpower", Float ) = 0.2
         _SpecularColor("SpecularColor", Color) = (1,1,1,1)
         _SpecularPower("SpecularPower", Range(0, 1)) = 0
+        _AnotherRamp("AnotherRamp", 2D) = "white" {}
+        [MaterialToggle] _AnotherRampFull("AnotherRampFull", Float) = 1
     }
     SubShader {
         Tags {

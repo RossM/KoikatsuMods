@@ -1,10 +1,11 @@
 fileFormatVersion: 2
 guid: db5dfac69f6830e4f9115a05b34eaf74
-timeCreated: 1649345576
+timeCreated: 1649350260
 licenseType: Free
 ShaderImporter:
   defaultTextures:
   - _Matcap: {fileID: 2800000, guid: 4e7f9841adbcd3c4db9e17dee6a1f471, type: 3}
+  - _AnotherRamp: {fileID: 2800000, guid: 6a47c86a0d6b1c042893ed91d00d5bcc, type: 3}
   userData: 
   assetBundleName: 
   assetBundleVariant: 
