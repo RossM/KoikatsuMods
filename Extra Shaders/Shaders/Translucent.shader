@@ -13,7 +13,8 @@
         _rimColor ("rimColor", Color) = (0.8897059,0.9359582,1,1)
         _rimV ("rimV", Float ) = 0.5
         _rimpower ("rimpower", Float ) = 0.2
-        [HideInInspector]_Cutoff ("Alpha cutoff", Range(0,1)) = 0.5
+        _SpecularColor("SpecularColor", Color) = (1,1,1,1)
+        _SpecularPower("SpecularPower", Range(0, 1)) = 0
     }
     SubShader {
         Tags {
