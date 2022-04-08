@@ -24,18 +24,18 @@
       <Property Name="rimV" Type="Float" Range="0,1" />
       <Property Name="SpecularPower" Type="Float" Range="0,1" />
       <Property Name="AnotherRampFull" Type="Float" Range="0,1" />
+      <Property Name="Cutoff" Type="Float" Range="0,1" />
     </Shader>
     <Shader Name="Custom/SimpleMatcap" AssetBundle="chara/xyl/extra_shaders.unity3d" Asset="asset_SimpleMatcap">
       <Property Name="Matcap" Type="Texture" DefaultValueAssetBundle="chara/xyl/extra_shaders.unity3d" DefaultValue="matcap_cartoon" />
       <Property Name="NormalMap" Type="Texture" />
       <Property Name="Color" Type="Color" />
-      <Property Name="AlphaCutoff" Type="Float" Range="0,1" />
+      <Property Name="Cutoff" Type="Float" Range="0,1" />
     </Shader>
     <Shader Name="Custom/Sticker" AssetBundle="chara/xyl/extra_shaders.unity3d" Asset="asset_Sticker">
       <Property Name="StickerTex" Type="Texture" DefaultValueAssetBundle="chara/xyl/extra_shaders.unity3d" DefaultValue="sticker" />
       <Property Name="NormalMap" Type="Texture" />
       <Property Name="Color" Type="Color" />
-      <Property Name="AlphaCutoff" Type="Float" Range="0,1" />
       <Property Name="DebugMode" Type="Float" Range="0,1" />
       <Property Name="FadeInterval" Type="Float" Range="0,1" />
       <Property Name="HideDepth" Type="Float" Range="-10,10" />
@@ -48,6 +48,7 @@
       <Property Name="AnimationScaleV" Type="Float" Range="0,2" />
       <Property Name="AnimationOffsetU" Type="Float" Range="-1,1" />
       <Property Name="AnimationOffsetV" Type="Float" Range="-1,1" />
+      <Property Name="Cutoff" Type="Float" Range="0,1" />
     </Shader>
     <Shader Name="Custom/Iridescent" AssetBundle="chara/xyl/extra_shaders.unity3d" Asset="asset_Iridescent">
       <Property Name="MainTex" Type="Texture" />
@@ -66,7 +67,6 @@
       <Property Name="IridescenceAlpha" Type="Float" Range="0,1" />
       <Property Name="IridescenceV" Type="Float" Range="0,1" />
       <Property Name="SpeclarHeight" Type="Float" Range="0,1" />
-      <Property Name="Cutoff" Type="Float" Range="0,1" />
       <Property Name="LineWidthS" Type="Float" Range="0,1" />
       <Property Name="IridescencePower" Type="Float" Range="0,1" />
       <Property Name="rimpower" Type="Float" Range="0,1" />
@@ -76,6 +76,7 @@
       <Property Name="rimColor" Type="Color" />
       <Property Name="rimX" Type="Float" Range="0,1" />
       <Property Name="ViewSpaceIridescence" Type="Float" Range="0,1" />
+      <Property Name="Cutoff" Type="Float" Range="0,1" />
     </Shader>
     <Shader Name="Custom/Aura" AssetBundle="chara/xyl/extra_shaders.unity3d" Asset="asset_Aura">
       <Property Name="MainTex" Type="Texture" />
@@ -88,6 +89,7 @@
       <Property Name="AnimationV" Type="Float" Range="-1,1" />
       <Property Name="NoiseAmount" Type="Float" Range="0,1" />
       <Property Name="LineWidthS" Type="Float" Range="0,1" />
+      <Property Name="Cutoff" Type="Float" Range="0,1" />
     </Shader>
     <Shader Name="Custom/Aura_HiRes" AssetBundle="chara/xyl/extra_shaders.unity3d" Asset="asset_Aura_HiRes">
       <Property Name="MainTex" Type="Texture" />
@@ -100,6 +102,7 @@
       <Property Name="AnimationV" Type="Float" Range="-1,1" />
       <Property Name="NoiseAmount" Type="Float" Range="0,1" />
       <Property Name="LineWidthS" Type="Float" Range="0,1" />
+      <Property Name="Cutoff" Type="Float" Range="0,1" />
     </Shader>
     <Shader Name="Debug/Textures" AssetBundle="chara/xyl/extra_shaders.unity3d" Asset="asset_DebugTextures">
       <Property Name="MainTex" Type="Texture" />
@@ -118,9 +121,11 @@
       <Property Name="UseAlphaMask" Type="Float" Range="0,1" />
       <Property Name="UseNormals" Type="Float" Range="0,1" />
       <Property Name="MatcapMode" Type="Float" Range="0,1" />
+      <Property Name="Cutoff" Type="Float" Range="0,1" />
     </Shader>
     <Shader Name="Debug/Lighting" AssetBundle="chara/xyl/extra_shaders.unity3d" Asset="asset_DebugLighting">
       <Property Name="NormalMap" Type="Texture" />
+      <Property Name="Cutoff" Type="Float" Range="0,1" />
     </Shader>
   </MaterialEditor>
 </manifest>

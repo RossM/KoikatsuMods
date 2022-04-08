@@ -10,6 +10,7 @@ Shader "Custom/Aura" {
         _DetailMask ("DetailMask", 2D) = "white" {}
         _LineWidthS ("LineWidthS", Float ) = 1
         _Gradient ("Gradient", 2D) = "white" {}
+        _Cutoff("Alpha cutoff", Range(0,1)) = 0.01
     }
     SubShader {
         Tags {
