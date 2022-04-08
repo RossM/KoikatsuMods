@@ -26,19 +26,19 @@ float result = radius;
 	float y = d[j];
 	if (abs(y) >= result)
 		break;
-	float2 uv2 = uv + float2(-maxRadius, y) * step / _ScreenParams.xy;
+	float4 uv2 = float4(uv + float2(-maxRadius, y) * step / _ScreenParams.xy, 0, 0);
 	// Iterate over columns in order to be easy to parallelize.
 	[unroll] for (float x = -maxRadius; x <= maxRadius; x++)
 	{
 		float r = sqrt(x * x + y * y) * step;
 		if (result > r)
 		{
-			float sceneZ = UNITY_SAMPLE_DEPTH(tex2D(DepthTexture, uv2));
+			float sceneZ = UNITY_SAMPLE_DEPTH(tex2Dlod(DepthTexture, uv2));
 #ifdef UNITY_REVERSED_Z 
-			if (sceneZ >= testZ && tex2D(GrabTexture, uv2).a == 0)
+			if (sceneZ >= testZ && tex2Dlod(GrabTexture, uv2).a == 0)
 				result = r;
 #else
-			if (sceneZ <= testZ && tex2D(GrabTexture, uv2).a == 0)
+			if (sceneZ <= testZ && tex2Dlod(GrabTexture, uv2).a == 0)
 				result = r;
 #endif
 		}
