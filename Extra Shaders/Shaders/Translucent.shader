@@ -17,6 +17,7 @@
         _SpecularPower("SpecularPower", Range(0, 1)) = 0.025
         _AnotherRamp("AnotherRamp", 2D) = "white" {}
         [MaterialToggle] _AnotherRampFull("AnotherRampFull", Float) = 0
+        _Cutoff("Alpha Cutoff", Float) = 0.01
     }
     SubShader {
         Tags {

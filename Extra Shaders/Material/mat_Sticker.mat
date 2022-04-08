@@ -76,7 +76,7 @@ Material:
     - _AnimationScaleV: 1
     - _AnimationSpeed: 0
     - _BumpScale: 1
-    - _Cutoff: 0.5
+    - _Cutoff: 0.01
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _Fade: 0.2
