@@ -78,8 +78,7 @@
       <Property Name="ShadowExtend" Type="Float" Range="0,1" />
       <Property Name="rimColor" Type="Color" />
       <Property Name="rimX" Type="Float" Range="0,1" />
-      <Property Name="ViewSpaceIridescence" Type="Float" Range="0,1" />
-      <Property Name="LocalSpaceIridescence" Type="Float" Range="0,1" />
+      <Property Name="IridescenceMode" Type="Float" Range="0,2" />
       <Property Name="LocalVectorX" Type="Float" Range="-1,1" />
       <Property Name="LocalVectorY" Type="Float" Range="-1,1" />
       <Property Name="LocalVectorZ" Type="Float" Range="-1,1" />
