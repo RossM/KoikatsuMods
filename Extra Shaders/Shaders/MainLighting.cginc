@@ -1,4 +1,6 @@
-﻿uniform float4 _ambientshadowG;
+﻿#include "Lighting.cginc"
+
+uniform float4 _ambientshadowG;
 float3 GetAdjustedShadowColor(float4 shadowColor, float shadowV)
 {
 	return lerp(float3(1, 1, 1), shadowColor.rgb, (shadowColor.a * (1.0 - _ambientshadowG.a) * shadowV));
@@ -19,4 +21,9 @@ float GetRamp(float3 normal, sampler2D anotherRamp, float anotherRampFull)
 	float4 _RampG_var = tex2Dlod(_RampG, rampUV);
 	float4 _AnotherRamp_var = tex2Dlod(anotherRamp, rampUV);
 	return lerp(_RampG_var.r, _AnotherRamp_var.r, anotherRampFull);
+}
+
+float3 GetLightColor(float lighting, float3 adjustedShadowColor, float detailMaskG, float shadowExtend)
+{
+	return _LightColor0.rgb * lerp(adjustedShadowColor, float3(1, 1, 1), min((1.0 - detailMaskG), lerp((shadowExtend * -0.5 + 0.0), 1.0, lighting)));
 }
