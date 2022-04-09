@@ -20,8 +20,8 @@ Shader "Custom/Aura_HiRes" {
             "ForceNoShadowCasting" = "True"
         }
         LOD 600
-        UsePass "Custom/AuraResetAlpha/FORWARD"
-        UsePass "Custom/AuraStencil/FORWARD"
+        UsePass "Custom/AuraResetAlpha/RESETALPHA"
+        UsePass "Custom/AuraStencil/STENCIL"
         GrabPass { }
         UsePass "Custom/AuraBase_HiRes/FORWARD"
     }
