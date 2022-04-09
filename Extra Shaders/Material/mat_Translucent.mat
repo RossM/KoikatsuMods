@@ -38,6 +38,7 @@ Material:
     - _AnotherRampFull: 0
     - _Cutoff: 0.01
     - _FakeRefraction: 0.1
+    - _LineWidthS: 1
     - _MatcapAlpha: 1
     - _ShadowsOnBackground: 0
     - _SpecularPower: 0.025
@@ -47,6 +48,7 @@ Material:
     - _rimpower: 0.2
     m_Colors:
     - _Color: {r: 0.2391934, g: 0.711025, b: 0.9345238, a: 1}
+    - _LineColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _ShadowColor: {r: 0.8, g: 0.8, b: 0.8, a: 0.2}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
     - _rimColor: {r: 0.8897059, g: 0.9359582, b: 1, a: 1}
