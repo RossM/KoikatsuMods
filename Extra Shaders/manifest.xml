@@ -35,7 +35,7 @@
       <Property Name="Cutoff" Type="Float" Range="0,1" DefaultValue="0.01" />
     </Shader>
     <Shader Name="Custom/Sticker" AssetBundle="chara/xyl/extra_shaders.unity3d" Asset="asset_Sticker">
-      <Property Name="StickerTex" Type="Texture" DefaultValueAssetBundle="chara/xyl/extra_shaders.unity3d" DefaultValue="sticker" />
+      <Property Name="StickerTex" Type="Texture" DefaultValueAssetBundle="chara/xyl/extra_shaders.unity3d" DefaultValue="sticker_blur" />
       <Property Name="NormalMap" Type="Texture" />
       <Property Name="Color" Type="Color" />
       <Property Name="DebugMode" Type="Float" Range="0,1" />
@@ -87,7 +87,7 @@
     <Shader Name="Custom/Aura" AssetBundle="chara/xyl/extra_shaders.unity3d" Asset="asset_Aura">
       <Property Name="MainTex" Type="Texture" />
       <Property Name="DetailMask" Type="Texture" />
-      <Property Name="NoiseTex" Type="Texture" DefaultValueAssetBundle="chara/xyl/extra_shaders.unity3d" DefaultValue="blobby" />
+      <Property Name="NoiseTex" Type="Texture" DefaultValueAssetBundle="chara/xyl/extra_shaders.unity3d" DefaultValue="noise_blobby" />
       <Property Name="Gradient" Type="Texture" DefaultValueAssetBundle="chara/xyl/extra_shaders.unity3d" DefaultValue="aura_gradient" />
       <Property Name="Color" Type="Color" />
       <Property Name="Radius" Type="Float" Range="0,1" />
@@ -100,7 +100,7 @@
     <Shader Name="Custom/Aura_HiRes" AssetBundle="chara/xyl/extra_shaders.unity3d" Asset="asset_Aura_HiRes">
       <Property Name="MainTex" Type="Texture" />
       <Property Name="DetailMask" Type="Texture" />
-      <Property Name="NoiseTex" Type="Texture" DefaultValueAssetBundle="chara/xyl/extra_shaders.unity3d" DefaultValue="blobby" />
+      <Property Name="NoiseTex" Type="Texture" DefaultValueAssetBundle="chara/xyl/extra_shaders.unity3d" DefaultValue="noise_blobby" />
       <Property Name="Gradient" Type="Texture" DefaultValueAssetBundle="chara/xyl/extra_shaders.unity3d" DefaultValue="aura_gradient" />
       <Property Name="Color" Type="Color" />
       <Property Name="Radius" Type="Float" Range="0,1" />
