@@ -7,7 +7,7 @@
 #endif
 
 	const int dSize = 2 * maxRadius + 1;
-	int d[dSize];
+	float d[dSize];
 	d[0] = 0;
 	for (int n = 1; n <= maxRadius; n++)
 	{
