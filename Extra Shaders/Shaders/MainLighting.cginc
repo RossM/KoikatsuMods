@@ -10,3 +10,12 @@ float3 GetRimLight(float3 normal, float3 view, float3 rimColor, float3 shadowCol
 	float3 rimRGB = saturate((rimColor * rimV * rimValue * lerp(float3(1, 1, 1), shadowColor, saturate(rimShadow))));
 	return rimRGB;
 }
+
+uniform sampler2D _RampG;
+float GetRamp(float3 normal, float3 light, sampler2D anotherRamp, float anotherRampFull)
+{
+	float4 rampUV = float4(saturate(dot(normal, light)), 0, 0, 0);
+	float4 _RampG_var = tex2Dlod(_RampG, rampUV);
+	float4 _AnotherRamp_var = tex2Dlod(anotherRamp, rampUV);
+	return lerp(_RampG_var.r, _AnotherRamp_var.r, anotherRampFull);
+}

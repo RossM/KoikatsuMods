@@ -11,6 +11,7 @@
       <Property Name="MainTex" Type="Texture" />
       <Property Name="NormalMap" Type="Texture" />
       <Property Name="AnotherRamp" Type="Texture" DefaultValueAssetBundle="chara/xyl/extra_shaders.unity3d" DefaultValue="anotherramp_translucent" />
+      <Property Name="AnotherRampFull" Type="Float" Range="0,1" />
       <Property Name="ShadowColor" Type="Color" />
       <Property Name="SpecularColor" Type="Color" />
       <Property Name="Color" Type="Color" />
@@ -23,7 +24,6 @@
       <Property Name="rimpower" Type="Float" Range="0,1" />
       <Property Name="rimV" Type="Float" Range="0,1" />
       <Property Name="SpecularPower" Type="Float" Range="0,1" />
-      <Property Name="AnotherRampFull" Type="Float" Range="0,1" />
       <Property Name="Cutoff" Type="Float" Range="0,1" />
     </Shader>
     <Shader Name="Custom/SimpleMatcap" AssetBundle="chara/xyl/extra_shaders.unity3d" Asset="asset_SimpleMatcap">
@@ -56,9 +56,10 @@
       <Property Name="HairGloss" Type="Texture" />
       <Property Name="ColorMask" Type="Texture" />
       <Property Name="DetailMask" Type="Texture" />
-      <Property Name="IridescenceRot" Type="Texture" DefaultValueAssetBundle="chara/xyl/extra_shaders.unity3d" DefaultValue="gray50" />
       <Property Name="IridescenceMask" Type="Texture" />
       <Property Name="IridescenceTex" Type="Texture" DefaultValueAssetBundle="chara/xyl/extra_shaders.unity3d" DefaultValue="irid_rainbow" />
+      <Property Name="AnotherRamp" Type="Texture" />
+      <Property Name="AnotherRampFull" Type="Float" Range="0,1" />
       <Property Name="Color" Type="Color" />
       <Property Name="Color2" Type="Color" />
       <Property Name="Color3" Type="Color" />

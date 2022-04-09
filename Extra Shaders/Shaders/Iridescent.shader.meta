@@ -1,10 +1,12 @@
 fileFormatVersion: 2
 guid: 6fcf07499eb69c347b19b671072d835b
-timeCreated: 1649464512
+timeCreated: 1649465978
 licenseType: Free
 ShaderImporter:
   defaultTextures:
+  - _ColorMask: {fileID: 2800000, guid: d9ef8764c89b0bd4392cea9f6f089258, type: 3}
   - _IridescenceTex: {fileID: 2800000, guid: e2125582235a4034aa79ad7aa8b195c4, type: 3}
+  - _AnotherRamp: {fileID: 2800000, guid: 6a47c86a0d6b1c042893ed91d00d5bcc, type: 3}
   userData: 
   assetBundleName: chara/xyl/extra_shaders.unity3d
   assetBundleVariant: 
