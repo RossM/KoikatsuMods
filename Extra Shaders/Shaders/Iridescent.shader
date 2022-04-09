@@ -47,6 +47,10 @@ Shader "Custom/Iridescent" {
             }
             Cull Front
             
+            Stencil {
+                Ref 2
+                Comp NotEqual
+            }
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag
