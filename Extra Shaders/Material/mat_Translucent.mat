@@ -41,7 +41,7 @@ Material:
     - _LineWidthS: 1
     - _MatcapAlpha: 1
     - _ShadowsOnBackground: 0
-    - _SpecularPower: 0.025
+    - _SpecularPower: 0
     - _Translucency: 0.5
     - _Transparency: 0
     - _rimV: 0.5
