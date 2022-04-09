@@ -20,7 +20,10 @@ Shader "Custom/AuraStencil" {
         }
         LOD 100
         Pass {
-            Name "Stencil"
+            Name "FORWARD"
+            Tags {
+                "LightMode"="ForwardBase"
+            }
             
             ColorMask A
             

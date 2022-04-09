@@ -20,7 +20,7 @@ Shader "Custom/Aura" {
             "ForceNoShadowCasting" = "True"
         }
         LOD 300
-        UsePass "Custom/AuraStencil/STENCIL"
+        UsePass "Custom/AuraStencil/FORWARD"
         GrabPass { }
         UsePass "Custom/AuraBase/FORWARD"
     }
