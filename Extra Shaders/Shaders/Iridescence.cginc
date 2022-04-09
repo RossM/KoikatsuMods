@@ -23,7 +23,8 @@ float2 GetIridescenceUV(float IridescenceMode, float3 view, float3 perturbedNorm
     // Mode 0 - View space iridescence
     else
     {
-        coords = mul(-UNITY_MATRIX_V, float4(RotateVector(perturbedNormal, halfDirection, view), 0)).xy;
+        // This is equivalent to taking the view tangents, rotating them to the normal, and then taking dot products with perturbedView as above.
+        coords = mul(UNITY_MATRIX_V, float4(RotateVector(halfDirection, perturbedNormal, view), 0)).xy;
     }
 
     return coords * 0.5 + 0.5;
