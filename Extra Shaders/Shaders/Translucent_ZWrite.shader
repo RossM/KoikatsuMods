@@ -1,4 +1,4 @@
-Shader "Custom/ZWrite" {
+Shader "Custom/Translucent_ZWrite" {
     Properties {
         _MainTex ("MainTex", 2D) = "white" {}
     }

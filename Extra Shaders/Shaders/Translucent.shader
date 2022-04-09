@@ -28,10 +28,10 @@
         }
         LOD 200
         GrabPass{ }
-        UsePass "Custom/ZWrite/ZWRITE"
-        UsePass "Custom/TranslucentBase/OUTLINE"
-        UsePass "Custom/TranslucentBase/FORWARD"
-        UsePass "Custom/TranslucentBase/SHADOWCASTER"        
+        UsePass "Custom/Translucent_ZWrite/ZWRITE"
+        UsePass "Custom/Translucent_Forward/OUTLINE"
+        UsePass "Custom/Translucent_Forward/FORWARD"
+        UsePass "Custom/Translucent_Forward/SHADOWCASTER"        
     }
     FallBack "Diffuse"
 }
