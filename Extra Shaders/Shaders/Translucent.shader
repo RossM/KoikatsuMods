@@ -17,6 +17,8 @@
         _SpecularPower("SpecularPower", Range(0, 1)) = 0.025
         _AnotherRamp("AnotherRamp", 2D) = "white" {}
         [MaterialToggle] _AnotherRampFull("AnotherRampFull", Float) = 0
+        _LineWidthS("LineWidthS", Float) = 1
+        _LineColor("LineColor", Color) = (0.5,0.5,0.5,1)
         _Cutoff("Alpha Cutoff", Float) = 0.01
     }
     SubShader {
@@ -27,6 +29,7 @@
         LOD 200
         GrabPass{ }
         UsePass "Custom/ZWrite/ZWRITE"
+        UsePass "Custom/TranslucentBase/OUTLINE"
         UsePass "Custom/TranslucentBase/FORWARD"
         UsePass "Custom/TranslucentBase/SHADOWCASTER"        
     }

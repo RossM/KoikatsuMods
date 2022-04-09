@@ -16,6 +16,8 @@
       <Property Name="SpecularColor" Type="Color" />
       <Property Name="Color" Type="Color" />
       <Property Name="rimColor" Type="Color" />
+      <Property Name="LineColor" Type="Color" />
+      <Property Name="LineWidthS" Type="Float" Range="0,1" />
       <Property Name="Translucency" Type="Float" Range="0,1" />
       <Property Name="Transparency" Type="Float" Range="0,1" />
       <Property Name="MatcapAlpha" Type="Float" Range="0,1" />
@@ -65,10 +67,10 @@
       <Property Name="Color3" Type="Color" />
       <Property Name="ShadowColor" Type="Color" />
       <Property Name="LineColor" Type="Color" />
+      <Property Name="LineWidthS" Type="Float" Range="0,1" />
       <Property Name="IridescenceAlpha" Type="Float" Range="0,1" />
       <Property Name="IridescenceV" Type="Float" Range="0,1" />
       <Property Name="SpeclarHeight" Type="Float" Range="0,1" />
-      <Property Name="LineWidthS" Type="Float" Range="0,1" />
       <Property Name="IridescencePower" Type="Float" Range="0,1" />
       <Property Name="rimpower" Type="Float" Range="0,1" />
       <Property Name="rimV" Type="Float" Range="0,1" />
