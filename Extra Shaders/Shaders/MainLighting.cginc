@@ -13,6 +13,13 @@ float3 GetRimLight(float3 normal, float3 view, float3 rimColor, float3 shadowCol
 	return rimRGB;
 }
 
+float3 GetSpecular(float3 normal, float3 view, float4 specularColor, float specularPower)
+{
+	float3 light = normalize(_WorldSpaceLightPos0.xyz);
+	float3 halfDirection = normalize(view + light);
+	return saturate((pow(max(0, dot(normal, halfDirection)), specularPower * 256.0) * 5.0 + -4.0) * specularPower * specularColor.rgb * specularColor.a);
+}
+
 uniform sampler2D _RampG;
 float GetRamp(float3 normal, sampler2D anotherRamp, float anotherRampFull)
 {
