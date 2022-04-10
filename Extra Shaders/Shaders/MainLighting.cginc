@@ -17,7 +17,10 @@ float3 GetSpecular(float3 normal, float3 view, float4 specularColor, float specu
 {
 	float3 light = normalize(_WorldSpaceLightPos0.xyz);
 	float3 halfDirection = normalize(view + light);
-	return saturate((pow(max(0, dot(normal, halfDirection)), specularPower * 256.0) * 5.0 + -4.0) * specularPower * specularColor.rgb * specularColor.a);
+	// This is the original calculation, which returns a curve that is very close to a straight line.
+	// return saturate((pow(max(0, dot(normal, halfDirection)), specularPower * 256.0) * 5.0 + -4.0) * specularPower * specularColor.rgb * specularColor.a);
+	// This version is faster to calculate and gives nearly identical results.
+	return saturate((1.0 - (1.0 - dot(normal, halfDirection)) * specularPower * 1200.0) * specularPower * specularColor.rgb * specularColor.a);
 }
 
 uniform sampler2D _RampG;
