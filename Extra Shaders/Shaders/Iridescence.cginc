@@ -27,5 +27,5 @@ float2 GetIridescenceUV(float IridescenceMode, float3 view, float3 perturbedNorm
         coords = mul(UNITY_MATRIX_V, float4(RotateVector(halfDirection, perturbedNormal, view), 0)).xy;
     }
 
-    return coords * 0.5 + 0.5;
+    return -coords * 0.5 + 0.5;
 }
