@@ -1,4 +1,5 @@
-﻿float GetAuraDistance(float2 uv, float radius, sampler2D GrabTexture)
+﻿UNITY_DECLARE_TEX2D(_GrabTexture);
+float GetAuraDistance(float2 uv, float radius)
 {
 #ifdef AURA_HIRES
 	const int maxRadius = 32;
@@ -27,15 +28,20 @@
 		float y = d[j];
 		if (abs(y) >= result)
 			break;
-		float4 uv2 = float4(uv + float2(-maxRadius, y) * step / _ScreenParams.xy, 0, 0);
+		float2 uv2 = float2(uv + float2(-maxRadius, y) * step / _ScreenParams.xy);
 		// Iterate over columns in order to be easy to parallelize.
 		[unroll] for (float x = -maxRadius; x <= maxRadius; x++)
 		{
 			float r = sqrt(x * x + y * y) * step;
 			if (result > r)
 			{
-				if (tex2Dlod(GrabTexture, uv2).a == 0)
+#if defined(SHADER_API_D3D11)
+				if (_GrabTexture.SampleLevel(sampler_GrabTexture, uv2, 0).a == 0)
 					result = r;
+#else
+				if (tex2Dlod(_GrabTexture, float4(uv2, 0, 0)).a == 0)
+					result = r;
+#endif
 			}
 			uv2.x += step / _ScreenParams.x;
 		}
