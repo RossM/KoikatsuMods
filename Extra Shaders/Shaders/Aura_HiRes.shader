@@ -15,7 +15,7 @@ Shader "Custom/Aura_HiRes" {
     SubShader {
         Tags {
             "IgnoreProjector"="True"
-            "Queue"="Transparent"
+            "Queue"="Transparent+100"
             "RenderType"="Transparent"
             "ForceNoShadowCasting" = "True"
         }
@@ -23,7 +23,9 @@ Shader "Custom/Aura_HiRes" {
         UsePass "Custom/Aura_ResetAlpha/RESETALPHA"
         UsePass "Custom/Aura_Stencil/STENCIL"
         GrabPass { }
-        UsePass "Custom/Aura_Forward_HiRes/FORWARD"
+        UsePass "Custom/Aura_HPass/HPASS"
+        GrabPass { }
+        UsePass "Custom/Aura_VPass/FORWARD"
     }
     FallBack "Custom/Aura"
 }   
