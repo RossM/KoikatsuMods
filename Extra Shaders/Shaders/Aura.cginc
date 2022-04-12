@@ -2,7 +2,7 @@
 
 UNITY_DECLARE_TEX2D(_GrabTexture);
 
-#define MAXRADIUS 127
+#define MAXRADIUS 128
 
 float EncodeDistance(float r)
 {
