@@ -23,9 +23,10 @@ float GetAuraDistance(float2 uv, float radius)
 	radius *= length(_ScreenParams.xy);
 
 	float step = max(radius / (maxRadius + 1), 1);
-	float step_sq = step * step;
+	float maxr = radius / step;
+	float2 pixelStep = step / _ScreenParams.xy;
 
-	float result_sq = radius * radius;
+	float result_sq = maxr * maxr;
 	// Iterate over rows in an order intended to maximize the chance that we find a nearby pixel early and can skip
 	// texture accesses.
 #ifndef SHADER_API_GLES
@@ -37,14 +38,14 @@ float GetAuraDistance(float2 uv, float radius)
 		float y_sq = y * y;
 		if (y_sq >= result_sq)
 			break;
-		float2 uv2 = float2(uv + float2(-maxRadius, y) * step / _ScreenParams.xy);
+		float2 uv2 = uv + float2(-maxRadius, y) * pixelStep.xy;
 		// Iterate over columns in order to be easy to parallelize.
 #ifndef SHADER_API_GLES
 		[unroll]
 #endif
 		for (float x = -maxRadius; x <= maxRadius; x++)
 		{
-			float r_sq = (x * x + y_sq) * step_sq;
+			float r_sq = x * x + y_sq;
 			if (result_sq > r_sq)
 			{
 #if defined(SHADER_API_D3D11) || defined(SHADER_API_GLCORE)
@@ -55,9 +56,9 @@ float GetAuraDistance(float2 uv, float radius)
 					result_sq = r_sq;
 #endif
 			}
-			uv2.x += step / _ScreenParams.x;
+			uv2.x += pixelStep.x;
 		}
 	}
 
-	return sqrt(result_sq) / radius;
+	return sqrt(result_sq) / maxr;
 }
