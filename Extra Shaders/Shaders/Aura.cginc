@@ -46,16 +46,13 @@ float GetAuraDistance(float2 uv, float radius)
 		for (float x = -maxRadius; x <= maxRadius; x++)
 		{
 			float r_sq = x * x + y_sq;
-			if (result_sq > r_sq)
-			{
 #if defined(SHADER_API_D3D11) || defined(SHADER_API_GLCORE)
-				if (_GrabTexture.SampleLevel(sampler_GrabTexture, uv2, 0).a == 0)
-					result_sq = r_sq;
+			if (_GrabTexture.SampleLevel(sampler_GrabTexture, uv2, 0).a == 0)
+				result_sq = min(result_sq, r_sq);
 #else
-				if (tex2Dlod(_GrabTexture, float4(uv2, 0, 0)).a == 0)
-					result_sq = r_sq;
+			if (tex2Dlod(_GrabTexture, float4(uv2, 0, 0)).a == 0)
+				result_sq = min(result_sq, r_sq);
 #endif
-			}
 			uv2.x += pixelStep.x;
 		}
 	}
