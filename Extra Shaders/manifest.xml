@@ -93,7 +93,7 @@
       <Property Name="Radius" Type="Float" Range="0,1" />
       <Property Name="AnimationU" Type="Float" Range="-1,1" />
       <Property Name="AnimationV" Type="Float" Range="-1,1" />
-      <Property Name="NoiseAmount" Type="Float" Range="-2,2" />
+      <Property Name="NoiseAmount" Type="Float" Range="0,2" />
       <Property Name="LineWidthS" Type="Float" Range="0,1" />
       <Property Name="GeometryExtend" Type="Float" Range="0,2" />
       <Property Name="Cutoff" Type="Float" Range="0,1" DefaultValue="0.01" />
