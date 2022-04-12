@@ -1,6 +1,12 @@
 ﻿#ifndef UTILITIES_CG_INCLUDED
 #define UTILITIES_CG_INCLUDED
 
+#if defined(SHADER_API_D3D11) || defined(SHADER_API_GLCORE)
+#define SAMPLE_TEX2D_LOD(tex, uv, loc) tex.SampleLevel(sampler##tex, uv, loc)
+#else
+#define SAMPLE_TEX2D_LOD(tex, uv, loc) tex2Dlod(tex, float4(uv, 0, loc))
+#endif
+
 // Compute the rotation of "vec" around the axis that takes "from" to "to". "from" and "to" must be normalized.
 float3 RotateVector(float3 vec, float3 from, float3 to) {
 	// r = the normalized axis of rotation

@@ -1,12 +1,6 @@
-﻿UNITY_DECLARE_TEX2D(_GrabTexture);
+﻿#include "Utilities.cginc"
 
-#pragma exclude_renderers d3d9
-
-#if defined(SHADER_API_D3D11) || defined(SHADER_API_GLCORE)
-#define SAMPLE_TEX2D_LOC(tex, uv, loc) tex.SampleLevel(sampler##tex, uv, loc)
-#else
-#define SAMPLE_TEX2D_LOC(tex, uv, loc) tex2Dlod(tex, float4(uv, 0, loc))
-#endif
+UNITY_DECLARE_TEX2D(_GrabTexture);
 
 #define MAXRADIUS 127
 
@@ -27,7 +21,7 @@ float HPass(float2 uv, float radius)
 	float result = MAXRADIUS;
 	for (float x = -MAXRADIUS; x <= MAXRADIUS; x++)
 	{
-		if (SAMPLE_TEX2D_LOC(_GrabTexture, uv + x * pixelstep, 0).a == 0)
+		if (SAMPLE_TEX2D_LOD(_GrabTexture, uv + x * pixelstep, 0).a == 0)
 			result = min(result, abs(x));
 	}
 	return EncodeDistance(result);
@@ -41,7 +35,7 @@ float VPass(float2 uv, float radius)
 	float result_sq = MAXRADIUS * MAXRADIUS;
 	for (float y = -MAXRADIUS; y <= MAXRADIUS; y++)
 	{
-		float rx = DecodeDistance(SAMPLE_TEX2D_LOC(_GrabTexture, uv + y * pixelstep, 0).a);
+		float rx = DecodeDistance(SAMPLE_TEX2D_LOD(_GrabTexture, uv + y * pixelstep, 0).a);
 		result_sq = min(result_sq, rx * rx + y * y);
 	}
 	return sqrt(result_sq) * step / radius;
