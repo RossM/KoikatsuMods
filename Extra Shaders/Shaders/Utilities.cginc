@@ -7,6 +7,12 @@
 #define SAMPLE_TEX2D_LOD(tex, uv, loc) tex2Dlod(tex, float4(uv, 0, loc))
 #endif
 
+#ifndef SHADER_API_GLES
+#define UNROLL [unroll]
+#else
+#define UNROLL
+#endif
+
 // Compute the rotation of "vec" around the axis that takes "from" to "to". "from" and "to" must be normalized.
 float3 RotateVector(float3 vec, float3 from, float3 to) {
 	// r = the normalized axis of rotation
