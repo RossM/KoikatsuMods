@@ -36,7 +36,7 @@ Shader "Custom/Aura_HPass" {
             #include "UnityCG.cginc"
             #include "Aura.cginc"
             #pragma multi_compile_fwdbase
-            #pragma only_renderers d3d11 glcore gles 
+            #pragma only_renderers d3d9 d3d11 glcore gles 
             #pragma target 3.0
             float GetAlpha( float2 uv , float radius , float noise ){
             float noiseExtend = abs(noise) + 1;

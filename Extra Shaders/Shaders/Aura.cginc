@@ -2,7 +2,11 @@
 
 UNITY_DECLARE_TEX2D(_GrabTexture);
 
+#ifdef SHADER_API_D3D9
+#define MAXRADIUS 64
+#else
 #define MAXRADIUS 128
+#endif
 
 float EncodeDistance(float r)
 {

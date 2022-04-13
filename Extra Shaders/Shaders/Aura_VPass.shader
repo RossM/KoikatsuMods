@@ -47,7 +47,7 @@ Shader "Custom/Aura_VPass" {
             #include "Aura.cginc"
             #pragma multi_compile_fwdbase
             #pragma multi_compile_fog
-            #pragma only_renderers d3d11 glcore gles 
+            #pragma only_renderers d3d9 d3d11 glcore gles 
             #pragma target 3.0
             uniform float4 _Color;
             float GetAuraDistance( float2 uv , float radius , float noise ){
