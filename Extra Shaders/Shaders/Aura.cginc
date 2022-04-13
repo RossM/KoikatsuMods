@@ -10,7 +10,10 @@ UNITY_DECLARE_TEX2D(_GrabTexture);
 
 float EncodeDistance(float r, float extra)
 {
-	return saturate((abs(r) + extra) / (MAXRADIUS + 1));
+	// This is slightly faster than
+	//   (abs(r) + extra) / (MAXRADIUS + 1)
+	// because it can be done with one multiply-add when r is constant.
+	return saturate(abs(r) / (MAXRADIUS + 1) + extra / (MAXRADIUS + 1));
 }
 float DecodeDistance(float a, out float extra)
 {
