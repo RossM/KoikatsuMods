@@ -6,7 +6,7 @@ Shader "Custom/Aura" {
         _MainTex ("MainTex", 2D) = "white" {}
         _AnimationU ("AnimationU", Float ) = 0
         _AnimationV ("AnimationV", Float ) = -0.06
-        _NoiseAmount("NoiseAmount", Range(-2, 2)) = 0.5
+        _NoiseAmount("NoiseAmount", Range(0, 2)) = 0.5
         _DetailMask ("DetailMask", 2D) = "white" {}
         _LineWidthS ("LineWidthS", Float ) = 1
         _Gradient ("Gradient", 2D) = "white" {}
