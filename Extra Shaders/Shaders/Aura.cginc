@@ -3,18 +3,18 @@
 UNITY_DECLARE_TEX2D(_GrabTexture);
 
 #ifdef SHADER_API_D3D9
-#define MAXRADIUS 64
+#define MAXRADIUS 63
 #else
-#define MAXRADIUS 128
+#define MAXRADIUS 127
 #endif
 
 float EncodeDistance(float r)
 {
-	return saturate(r / MAXRADIUS);
+	return saturate(r / (MAXRADIUS + 1));
 }
 float DecodeDistance(float a)
 {
-	return a * MAXRADIUS;
+	return a * (MAXRADIUS + 1);
 }
 
 float HPass(float2 uv, float radius)
@@ -23,7 +23,7 @@ float HPass(float2 uv, float radius)
 	float step = max(radius / (MAXRADIUS + 1), 1);
 	float ustep = step / _ScreenParams.x;
 	float limit = floor(radius / step);
-	float result = MAXRADIUS;
+	float result = MAXRADIUS + 1;
 	if (limit >= MAXRADIUS)
 	{
 		UNROLL for (float x = -MAXRADIUS; x <= MAXRADIUS; x++)
@@ -49,7 +49,7 @@ float VPass(float2 uv, float radius)
 	float step = max(radius / (MAXRADIUS + 1), 1);
 	float vstep = step / _ScreenParams.y;
 	float limit = floor(radius / step);
-	float result_sq = MAXRADIUS * MAXRADIUS;
+	float result_sq = (MAXRADIUS + 1) * (MAXRADIUS + 1);
 	if (limit >= MAXRADIUS)
 	{
 		UNROLL for (float y = -MAXRADIUS; y <= MAXRADIUS; y++)
