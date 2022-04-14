@@ -34,7 +34,7 @@ For objects with rainbow highlights and similar effects, such as soap bubbles, o
 
 **IridescenceMask:** Masks off areas of the main texture that iridescence should apply to.
 
-**IridescenceMode:** Controls how the iridescence texture is rotated relative to the object.
+**IridescenceMode:** Controls how the iridescence texture is rotated relative to the object's surface.
 - Mode 0: Iridescence "up" matches the camera "up".
 - Mode 1: Iridescence "up" is a particular direction in the object's local coordinates, given by the LocalVectorX/Y/Z parameters.
 - Mode 2: Ididescence "up" matches with object UV space "up".
