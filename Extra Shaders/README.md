@@ -18,7 +18,7 @@ Adds a glowing border around an object. Best used as a second material for an ob
 
 **AnimationU/AnimationV:** Allow animation of the noise texture for fire-like effects.
 
-**DetailMask/LineWidthS:** Only used to calculate the outline width. They should be the same as for the primary material, or there may be gaps between the outline and the aura.
+**DetailMask/LineWidthS:** Only used to calculate the outline width. These should be the same as for the primary material, or there may be gaps between the outline and the aura.
 
 **GeometryExtend:** Controls the size of the geometry the aura is drawn on. Increase if the edge of the aura is getting cut off, but it may impact performance.
 
@@ -37,7 +37,9 @@ For objects with rainbow highlights and similar effects, such as soap bubbles, o
 **IridescenceMode:** Controls how the iridescence texture is rotated relative to the object's surface.
 - Mode 0: Iridescence "up" matches the camera "up".
 - Mode 1: Iridescence "up" is a particular direction in the object's local coordinates, given by the LocalVectorX/Y/Z parameters.
-- Mode 2: Ididescence "up" matches with object UV space "up".
+- Mode 2: Iridescence "up" matches with object UV space "up".
+
+**LocalVectorX/LocalVectorY/LocalVectorZ:** Used by IridescenceMode 1, above.
 
 # Custom/MatCap
 Yet another Matcap shader. This one fixes a math error in BetterMatcap (it fails to normalize the view-reflection vector) and supports matcap textures with alpha.
