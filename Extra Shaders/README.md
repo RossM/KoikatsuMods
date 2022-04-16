@@ -41,7 +41,7 @@ For objects with rainbow highlights and similar effects, such as soap bubbles, o
 
 **LocalVectorX/LocalVectorY/LocalVectorZ:** Used by IridescenceMode 1, above.
 
-# Custom/MatCap
+# Custom/SimpleMatcap
 Yet another Matcap shader. This one fixes a math error in BetterMatcap (it fails to normalize the view-reflection vector) and supports matcap textures with alpha.
 
 ## Properties
