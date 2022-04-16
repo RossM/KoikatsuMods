@@ -2,9 +2,10 @@
 <manifest schema-ver="1">
   <guid>Xyl.ExtraShaders</guid>
   <name>Extra Shaders</name>
-  <version>0.1</version>
+  <version>1.0</version>
   <author>Xyl</author>
   <description>A collection of shaders.</description>
+  <website>https://github.com/RossM/KoikatsuMods</website>
   <MaterialEditor>
     <Shader Name="Custom/Translucent" AssetBundle="chara/xyl/extra_shaders.unity3d" Asset="asset_Translucent">
       <Property Name="Matcap" Type="Texture" DefaultValueAssetBundle="chara/xyl/extra_shaders.unity3d" DefaultValue="matcap_cartoon" />
