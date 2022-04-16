@@ -82,6 +82,6 @@ For transparent and translucent objects.
 
 **Matcap:** A matcap texture.
 
-**MatcapAlpha:** Controls whether to use the matcap texture or the object’s normal texture.
+**MatcapAlpha:** Controls whether to use the matcap texture or the object’s main texture.
 
 **ShadowsOnBackground:** If 0, transparent parts of the object don’t have shadows. If 1, shadows appear fully even on transparent areas, as if the background was painted onto the object.
