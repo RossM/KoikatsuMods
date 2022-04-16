@@ -59,6 +59,8 @@ Adds a 2D image that always faces the camera. For best results, apply to a spher
 
 **Radius:** Scales the size of the sticker texture. Making it too big may make it get cut off by the edge of the object’s geometry, consider enlarging the object the shader is applied to instead.
 
+**ScaleMode:** Determines how the sticker determines the object's scale. Mode 0 works for a sphere, but causes distortion on other objects. Mode 1 works for any object but needs some manual fiddling with radius.
+
 **HideDepth:** Adjusts the effective depth of the sticker relative to the center of the object. Positive numbers move closer to the camera, negative numbers move further away.
 
 **FadeInterval:** If nonzero, the sticker will gradually become more visible as it nears the HideDepth, rather than appearing abruptly. Useful for simulating things like fog or glowing.
