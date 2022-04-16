@@ -78,7 +78,7 @@ For transparent and translucent objects.
 
 **Translucency:** Allows the background to show through the object, but tinted by the object’s color.
 
-**FakeRefraction:** Distorts the background behind the object, giving the impression that the material is refracive.
+**FakeRefraction:** Distorts the background behind the object, giving the impression that the material is refractive.
 
 **Matcap:** A matcap texture.
 
