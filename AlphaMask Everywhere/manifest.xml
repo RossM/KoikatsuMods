@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest schema-ver="1">
+  <guid>Xyl.AlphaMaskEverywhere</guid>
+  <name>AlphaMask Everywhere</name>
+  <version>0.1</version>
+  <author>Xyl</author>
+  <description>A collection of shaders.</description>
+  <website>https://github.com/RossM/KoikatsuMods</website>
+</manifest>
